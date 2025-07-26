@@ -1,0 +1,218 @@
+* {
+  font-family: "Inter", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
+}
+
+button {
+  cursor: pointer;
+}
+
+/************ Header section ui end here ************/
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  display: flex;
+  align-items: center;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .logo {
+  height: 100px;
+}
+
+.header .right {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.header .second-logo {
+  width: 90px;
+}
+
+.header .nav_items {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.header .nav_items li {
+  list-style: none;
+  color: #ffffff;
+  transition: all 0.2s ease;
+  font-size: 1rem;
+}
+.header .nav_items li:hover {
+  color: #3ad4fd;
+}
+.header .nav_items li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header .menu_btn {
+  display: none;
+}
+
+@media only screen and (max-width: 991px) {
+  .header {
+    height: 100px;
+  }
+
+  .header .logo {
+    height: 90px;
+  }
+
+  .header .second-logo {
+    width: 80px;
+  }
+
+  .header .nav_items {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    flex-direction: column;
+    padding: 1.5rem 0;
+    background-color: #00000080;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.4s ease, opacity 0.4s ease;
+    pointer-events: none;
+    gap: 1rem;
+  }
+
+  .header .nav_items.show {
+    padding: 1.5rem 0;
+    max-height: 500px;
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .header .menu_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: transparent;
+    border: none;
+  }
+  .header .menu_btn img {
+    width: 25px;
+  }
+}
+/************ Header section ui end here ************/
+.view_more_btn {
+  background: linear-gradient(90deg, #056783 0%, #3ad4fd 100%);
+  border: none;
+  border-radius: 66px;
+  padding: 0.55rem 2rem;
+  padding-right: 1rem;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.view_more_btn:hover {
+  transform: translateY(-2px); /* slight lift */
+  box-shadow: 0 4px 12px rgba(16, 134, 167, 0.4); /* subtle glow */
+}
+
+@media only screen and (max-width: 575px) {
+  .view_more_btn {
+    padding: 0.55rem 2rem;
+    padding-right: 1rem;
+    gap: 8px;
+    font-size: 14px;
+  }
+
+  .view_more_btn img {
+    width: 22px;
+  }
+}
+
+/************ Home-Hero section ui start here ************/
+
+.hero_section {
+  padding-top: 120px;
+  width: 100%;
+  min-height: 100vh;
+  background: url("/assets/images/hero-bg.png") no-repeat center center;
+  background-size: cover;
+}
+
+.hero_section .container {
+  margin-top: 80px;
+}
+
+.hero_section .title {
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+}
+
+.hero_section .sub-title {
+  margin-top: 1rem;
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+@media only screen and (max-width: 991px) {
+  .hero_section {
+    padding-top: 100px;
+  }
+  .hero_section .container {
+    margin-top: 80px;
+  }
+
+  .hero_section .title {
+    font-size: 40px;
+  }
+
+  .hero_section .sub-title {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .hero_section {
+    padding: 0 5%;
+    padding-top: 100px;
+  }
+
+  .hero_section .title {
+    font-size: 36px;
+  }
+
+  .hero_section .sub-title {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+/************ Home-Hero section ui ends here ************/
