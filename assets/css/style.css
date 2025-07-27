@@ -14,15 +14,21 @@ button {
   cursor: pointer;
 }
 
+p {
+  margin: 0;
+}
+
 /************ Header section ui end here ************/
 .header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 120px;
+  height: 100px;
   display: flex;
   align-items: center;
+  background-color: #0000002d;
+  z-index: 999;
 }
 
 .header .container {
@@ -32,7 +38,7 @@ button {
 }
 
 .header .logo {
-  height: 100px;
+  height: 80px;
 }
 
 .header .right {
@@ -42,7 +48,7 @@ button {
 }
 
 .header .second-logo {
-  width: 90px;
+  width: 80px;
 }
 
 .header .nav_items {
@@ -70,15 +76,15 @@ button {
 
 @media only screen and (max-width: 991px) {
   .header {
-    height: 100px;
+    height: 80px;
   }
 
   .header .logo {
-    height: 90px;
+    height: 70px;
   }
 
   .header .second-logo {
-    width: 80px;
+    width: 70px;
   }
 
   .header .nav_items {
@@ -116,7 +122,15 @@ button {
     width: 25px;
   }
 }
+
+@media only screen and (max-width: 991px) {
+  .header {
+    padding: 0 5%;
+  }
+}
 /************ Header section ui end here ************/
+
+/************ view-more-btn ui start here ************/
 .view_more_btn {
   background: linear-gradient(90deg, #056783 0%, #3ad4fd 100%);
   border: none;
@@ -131,6 +145,12 @@ button {
   font-weight: 500;
   font-size: 1rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.view_more_btn.small {
+  padding: 0.35rem 1.5rem;
+  padding-right: 0.875rem;
+  font-size: 15px;
 }
 
 .view_more_btn:hover {
@@ -150,15 +170,60 @@ button {
     width: 22px;
   }
 }
+/************ view-more-btn ui end here ************/
+
+/************ section title ui start here ************/
+.section_title_wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.section_title_wrapper .section_title {
+  font-weight: 500;
+  font-size: 20px;
+  color: #000000;
+  margin: 0;
+}
+
+.section_title_wrapper .section_title.white {
+  color: #ffffff;
+}
+
+.section_title_wrapper .line {
+  width: 76px;
+  height: 1px;
+  background-color: #000000;
+}
+
+.section_title_wrapper .line.white {
+  background-color: #ffffff;
+}
+
+@media only screen and (max-width: 991px) {
+  .section_title_wrapper {
+    gap: 8px;
+  }
+
+  .section_title_wrapper .section_title {
+    font-size: 18px;
+  }
+
+  .section_title_wrapper .line {
+    width: 70px;
+  }
+}
+/************ section title ui end here ************/
 
 /************ Home-Hero section ui start here ************/
 
 .hero_section {
-  padding-top: 120px;
+  padding-top: 100px;
   width: 100%;
   min-height: 100vh;
   background: url("/assets/images/hero-bg.png") no-repeat center center;
   background-size: cover;
+  padding-bottom: 3rem;
 }
 
 .hero_section .container {
@@ -183,7 +248,7 @@ button {
 
 @media only screen and (max-width: 991px) {
   .hero_section {
-    padding-top: 100px;
+    padding-top: 80px;
   }
   .hero_section .container {
     margin-top: 80px;
@@ -203,6 +268,7 @@ button {
   .hero_section {
     padding: 0 5%;
     padding-top: 100px;
+    padding-bottom: 3rem;
   }
 
   .hero_section .title {
@@ -216,3 +282,314 @@ button {
 }
 
 /************ Home-Hero section ui ends here ************/
+
+/************ Home-About-us section ui start here ************/
+.home_about_us {
+  width: 100%;
+  padding: 3rem 0;
+}
+.home_about_us .container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 5rem;
+}
+
+.home_about_us .title {
+  font-weight: 500;
+  font-size: 45px;
+  color: #282a39;
+}
+
+.home_about_us .para {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 180%;
+  color: #666666;
+  margin: 0;
+}
+
+.home_about_us .second_btn {
+  display: none;
+}
+
+@media only screen and (max-width: 991px) {
+  .home_about_us .container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .home_about_us .title {
+    font-size: 40px;
+  }
+
+  .home_about_us .first_btn {
+    display: none;
+  }
+
+  .home_about_us .second_btn {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .home_about_us {
+    padding: 3rem 5%;
+  }
+
+  .home_about_us .title {
+    font-size: 32px;
+  }
+
+  .home_about_us .para {
+    font-size: 14px;
+  }
+}
+/************ Home-About-us section ui end here ************/
+
+/************ Home-Services section ui start here ************/
+.home_services {
+  background: url("/assets/images/home-services-bg.png") no-repeat center center;
+  background-size: cover;
+  padding: 3rem 0;
+}
+
+.home_services .title_wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.home_services .title {
+  font-weight: 700;
+  font-size: 50px;
+  color: #ffffff;
+}
+.home_services .view_all_service_wrapper {
+  margin-left: auto;
+  font-weight: 700;
+  font-size: 12px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.home_services .view_all_service_wrapper .round {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(284.59deg, #2cb6dc -5.73%, #186276 60.77%);
+  display: grid;
+  place-items: center;
+}
+
+.service_card_wrapper {
+  margin-top: 4rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.service_card_wrapper .service_card {
+  width: 100%;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  border-radius: 26px;
+  position: relative;
+}
+
+.service_card_wrapper .service_card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(to top, rgba(5, 5, 5, 0.966), rgba(5, 5, 5, 0));
+  pointer-events: none;
+}
+.service_card_wrapper .service_card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.service_card_wrapper .text_wrapper {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem;
+}
+
+.service_card_wrapper .service_card .text {
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 991px) {
+  .home_services .title {
+    font-size: 40px;
+  }
+  .home_services .view_all_service_wrapper {
+    font-size: 11px;
+    gap: 6px;
+  }
+
+  .home_services .view_all_service_wrapper .round {
+    width: 35px;
+    height: 35px;
+  }
+
+  .service_card_wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .service_card_wrapper .service_card {
+    border-radius: 22px;
+  }
+
+  .service_card_wrapper .service_card .text {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .home_services {
+    padding: 3rem 5%;
+  }
+
+  .home_services .title {
+    font-size: 36px;
+  }
+
+  .service_card_wrapper {
+    margin-top: 3rem;
+    grid-template-columns: 1fr;
+  }
+
+  .service_card_wrapper .service_card .text {
+    font-size: 14px;
+  }
+}
+
+/************ Home-Services section ui end here ************/
+
+/************ Home-Fleets section ui start here ************/
+.home_fleets {
+  padding: 3rem 0;
+}
+
+.home_fleets .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.home_fleets .title {
+  font-weight: 500;
+  font-size: 50px;
+  text-align: center;
+  color: #282a39;
+}
+
+.home_fleets .tabs_wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.home_fleets .tabs_wrapper .tab {
+  font-weight: 400;
+  font-size: 15px;
+  color: #3a3a3a;
+  border: 1px solid #ebebeb;
+  padding: 5px 1.5rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.home_fleets .tabs_wrapper .tab:hover {
+  background-color: #ebebeb;
+}
+
+.fleet_card_wrapper {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.fleet_card {
+  width: 100%;
+  border-radius: 30px;
+  padding: 2.5rem 1rem 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.fleet_card .pic {
+  max-width: 100%;
+  margin-bottom: 2rem;
+}
+
+.fleet_card .details_wrapper {
+  margin-top: auto;
+}
+
+.fleet_card .name {
+  font-weight: 600;
+  font-size: 20px;
+  color: #000000;
+  text-align: left;
+}
+
+.fleet_card .about_wrapper {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.fleet_card .about_wrapper p {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #000000;
+}
+
+@media only screen and (max-width: 1199px) {
+  .fleet_card_wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .fleet_card_wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .home_fleets {
+    padding: 3rem 5%;
+  }
+}
+/************ Home-Fleets section ui end here ************/
