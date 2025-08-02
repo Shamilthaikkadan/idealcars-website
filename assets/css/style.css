@@ -18,6 +18,59 @@ p {
   margin: 0;
 }
 
+/*---------------------------------------
+       PRE LOADER              
+  -----------------------------------------*/
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  background: none repeat scroll 0 0 #ffffff;
+  overflow-x: hidden;
+}
+
+.spinner {
+  border: 1px solid transparent;
+  border-radius: 3px;
+  position: relative;
+}
+
+.spinner:before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 45px;
+  height: 45px;
+  margin-top: -10px;
+  margin-left: -10px;
+  border-radius: 50%;
+  border: 1px solid #ebeaea;
+  border-top-color: #575757;
+  animation: spinner 0.9s linear infinite;
+}
+
+@-webkit-keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 /************ Header section ui end here ************/
 .header {
   position: fixed;
@@ -64,7 +117,9 @@ p {
   transition: all 0.2s ease;
   font-size: 1rem;
 }
-.header .nav_items li:hover {
+
+.header .nav_items li:hover,
+.header .nav_items li.active {
   color: #3ad4fd;
 }
 .header .nav_items li a {
@@ -406,6 +461,7 @@ p {
   overflow: hidden;
   border-radius: 26px;
   position: relative;
+  cursor: pointer;
 }
 
 .service_card_wrapper .service_card::before {
@@ -1406,3 +1462,143 @@ p {
   }
 }
 /************ service-view page ui end here ************/
+
+/************ contact page ui start here ************/
+.contacts_wrapper {
+  padding: 5rem 0;
+}
+.contacts_wrapper .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  gap: 2rem;
+}
+.contacts_wrapper .contact_card {
+  text-align: center;
+}
+.contacts_wrapper .contact_card .contact_icon {
+  width: 35px;
+}
+.contacts_wrapper .contact_card .title {
+  font-weight: 700;
+  font-size: 26px;
+  color: #000000;
+  margin-top: 1rem;
+  margin-bottom: 15px;
+}
+.contacts_wrapper .contact_card .text {
+  margin-top: 6px;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #000000;
+}
+
+.contact_form_wrapper {
+  padding: 5rem 0;
+}
+.contact_form_wrapper .title {
+  font-weight: 600;
+  font-size: 40px;
+  text-align: center;
+}
+.contact_form_wrapper .form {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.contact_form_wrapper .input_wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+.contact_form_wrapper .input {
+  width: 100%;
+  font-size: 1rem;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  padding: 10px 1rem;
+  outline: none;
+  color: #000000;
+}
+.contact_form_wrapper .input:focus {
+  border-color: #39d3fa;
+}
+.contact_form_wrapper .submit_btn {
+  margin: 1rem auto 0 auto;
+  font-size: 1rem;
+  font-weight: 500;
+  width: fit-content;
+  border: none;
+  padding: 12px 3rem;
+  border-radius: 10px;
+  color: #ffffff;
+  background-color: #39d3fa;
+}
+
+@media only screen and (max-width: 991px) {
+  .contacts_wrapper .contact_card .contact_icon {
+    width: 35px;
+  }
+  .contacts_wrapper .contact_card .title {
+    font-size: 22px;
+  }
+  .contacts_wrapper .contact_card .text {
+    font-size: 14px;
+  }
+
+  .contact_form_wrapper .title {
+    font-size: 36px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .contacts_wrapper .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact_form_wrapper .input_wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .contacts_wrapper {
+    padding: 5rem 5%;
+  }
+  .contacts_wrapper .container {
+    grid-template-columns: 1fr;
+  }
+
+  .contact_form_wrapper {
+    padding: 5rem 5%;
+  }
+  .contact_form_wrapper .title {
+    font-size: 30px;
+  }
+  .contact_form_wrapper .input {
+    font-size: 14px;
+  }
+  .contact_form_wrapper .submit_btn {
+    font-size: 14px;
+  }
+}
+/************ contact page ui end here ************/
+
+/************ Animation start here ************/
+
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/************ Animation end here ************/
