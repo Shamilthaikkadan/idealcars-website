@@ -19,6 +19,14 @@
       rel="stylesheet"
     />
 
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/assets/css/style.css" />
   </head>
@@ -261,117 +269,60 @@
           <div class="line"></div>
         </div>
 
-        <div class="slider">
-          <div class="list">
-            <div class="item">
+        <div class="logo-slider">
+          <div class="logo-track">
+            <!-- First set of logos -->
+            <div class="logo-card">
               <img
                 src="/assets/images/clients/client-1.png"
                 alt="1"
                 class="client-logo"
               />
             </div>
-            <div class="item">
+            <div class="logo-card">
               <img
                 src="/assets/images/clients/client-2.png"
                 alt="2"
                 class="client-logo"
               />
             </div>
-            <div class="item">
+            <div class="logo-card">
               <img
                 src="/assets/images/clients/client-3.png"
                 alt="3"
                 class="client-logo"
               />
             </div>
-            <div class="item special">
+            <div class="logo-card special">
               <img
                 src="/assets/images/clients/client-4.png"
                 alt="4"
                 class="client-logo"
               />
             </div>
-            <!-- Repeated set for infinite effect -->
-            <div class="item">
+            <!-- Duplicate set for seamless loop -->
+            <div class="logo-card">
               <img
                 src="/assets/images/clients/client-1.png"
                 alt="1"
                 class="client-logo"
               />
             </div>
-            <div class="item">
+            <div class="logo-card">
               <img
                 src="/assets/images/clients/client-2.png"
                 alt="2"
                 class="client-logo"
               />
             </div>
-            <div class="item">
+            <div class="logo-card">
               <img
                 src="/assets/images/clients/client-3.png"
                 alt="3"
                 class="client-logo"
               />
             </div>
-            <div class="item special">
-              <img
-                src="/assets/images/clients/client-4.png"
-                alt="4"
-                class="client-logo"
-              />
-            </div>
-            <!-- Repeated set for infinite effect -->
-            <div class="item">
-              <img
-                src="/assets/images/clients/client-1.png"
-                alt="1"
-                class="client-logo"
-              />
-            </div>
-            <div class="item">
-              <img
-                src="/assets/images/clients/client-2.png"
-                alt="2"
-                class="client-logo"
-              />
-            </div>
-            <div class="item">
-              <img
-                src="/assets/images/clients/client-3.png"
-                alt="3"
-                class="client-logo"
-              />
-            </div>
-            <div class="item special">
-              <img
-                src="/assets/images/clients/client-4.png"
-                alt="4"
-                class="client-logo"
-              />
-            </div>
-            <!-- Repeated set for infinite effect -->
-            <div class="item">
-              <img
-                src="/assets/images/clients/client-1.png"
-                alt="1"
-                class="client-logo"
-              />
-            </div>
-            <div class="item">
-              <img
-                src="/assets/images/clients/client-2.png"
-                alt="2"
-                class="client-logo"
-              />
-            </div>
-            <div class="item">
-              <img
-                src="/assets/images/clients/client-3.png"
-                alt="3"
-                class="client-logo"
-              />
-            </div>
-            <div class="item special">
+            <div class="logo-card special">
               <img
                 src="/assets/images/clients/client-4.png"
                 alt="4"
@@ -383,8 +334,143 @@
       </div>
     </section>
 
+    <div class="testimonial-section">
+      <div class="container">
+        <div class="section_title_wrapper">
+          <h2 class="section_title">Testimonials</h2>
+          <div class="line"></div>
+        </div>
+        <h1 class="title mt-3">Don't take our word for it</h1>
+        <div class="mt-5 swiper testimonialSwiper">
+          <div class="swiper-wrapper">
+            <!-- Card 1 -->
+            <div class="swiper-slide testimonial-card">
+              <h3 class="main-text">“The best Webflow Templates”</h3>
+              <p class="para">
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat aute irure sint
+                amet occaecat cupidatat non proident
+              </p>
+
+              <div class="profile_wrapper">
+                <div class="avatar">
+                  <img
+                    src="/assets/images/testimonials/testimonial-1.png"
+                    alt="Profile"
+                  />
+                </div>
+                <div>
+                  <p class="name">Sophia Moore</p>
+                  <p class="profession">CEO at Webflow Agency</p>
+                </div>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="swiper-slide testimonial-card">
+              <h3 class="main-text">“BRIX Templates is the #1”</h3>
+              <p class="para">
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat aute irure sint
+                amet occaecat cupidatat non proident
+              </p>
+
+              <div class="profile_wrapper">
+                <div class="avatar">
+                  <img
+                    src="/assets/images/testimonials/testimonial-2.png"
+                    alt="Profile"
+                  />
+                </div>
+                <div>
+                  <p class="name">Adam Smith</p>
+                  <p class="profession">Webflow Developer</p>
+                </div>
+              </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="swiper-slide testimonial-card">
+              <h3 class="main-text">“Webflow is the best nocode tool”</h3>
+              <p class="para">
+                Ut enim ad minim veniam, quis nostrudexercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat aute irure sint
+                amet occaecat cupidatat non proident”
+              </p>
+
+              <div class="profile_wrapper">
+                <div class="avatar">
+                  <img
+                    src="/assets/images/testimonials/testimonial-3.png"
+                    alt="Profile"
+                  />
+                </div>
+                <div>
+                  <p class="name">Mike Warren</p>
+                  <p class="profession">Developer at BRIX Templates</p>
+                </div>
+              </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="swiper-slide testimonial-card">
+              <h3 class="main-text">“The best Webflow Templates”</h3>
+              <p class="para">
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat aute irure sint
+                amet occaecat cupidatat non proident
+              </p>
+
+              <div class="profile_wrapper">
+                <div class="avatar">
+                  <img
+                    src="/assets/images/testimonials/testimonial-1.png"
+                    alt="Profile"
+                  />
+                </div>
+                <div>
+                  <p class="name">Sophia Moore</p>
+                  <p class="profession">CEO at Webflow Agency</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation Buttons Below -->
+        <div class="testimonial-navigation">
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </div>
+
+    <section class="newsletter_signup">
+      <div class="container">
+        <div class="newsletter_card">
+          <div>
+            <h5 class="first_title">newsletter signup</h5>
+            <h3 class="mt-3 second_title">Subscribe for <br> the updates</h3>
+          </div>
+          <div>
+            <div class="input_wrapper">
+              <input type="text" placeholder="Enter your email address" />
+              <button class="send_btn">
+                <img src="/assets/images/svg/send.svg" alt="Send" />
+              </button>
+            </div>
+            <div class="mt-3 checkbox-wrapper-13">
+              <input id="c1-13" type="checkbox" />
+              <label for="c1-13"
+                >I agree to the
+                <a href="#" style="color: inherit">privacy policy</a></label
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Bootstrap JS (with Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/assets/js/script.js"></script>
+    <script src="/assets/js/swiper.js"></script>
   </body>
 </html>

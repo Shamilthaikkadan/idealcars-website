@@ -640,22 +640,41 @@ p {
   text-align: center;
 }
 
-.our_clients .slider {
+/* Infinite Logo Slider */
+.our_clients .logo-slider {
   overflow: hidden;
   position: relative;
+  width: 100%;
   padding-top: 4rem;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
+  mask: linear-gradient(
+    to right,
+    transparent 0%,
+    black 10%,
+    black 90%,
+    transparent 100%
+  );
+  -webkit-mask: linear-gradient(
+    to right,
+    transparent 0%,
+    black 10%,
+    black 90%,
+    transparent 100%
+  );
 }
 
-.our_clients .slider .list {
+.our_clients .logo-track {
   display: flex;
-  align-items: center;
   gap: 50px;
-  animation: scroll 20s linear infinite;
+  animation: scroll 30s linear infinite;
   width: fit-content;
 }
 
-.our_clients .slider .item {
+.our_clients .logo-track:hover {
+  animation-play-state: paused;
+}
+
+.our_clients .logo-card {
   width: 320px;
   height: 150px;
   border-radius: 20px;
@@ -666,43 +685,395 @@ p {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
-.our_clients .slider .item.special {
+.our_clients .logo-card.special {
   padding: 1rem;
 }
 
-.our_clients .slider .client-logo {
+.our_clients .logo-card .client-logo {
   height: 100%;
   width: 100%;
   object-fit: contain;
 }
 
-/* Hover pause */
-.our_clients .slider .list:hover {
-  animation-play-state: paused;
-}
-
-/* Infinite scroll animation */
+/* Animation */
 @keyframes scroll {
   0% {
     transform: translateX(0);
   }
-
   100% {
     transform: translateX(-50%);
   }
 }
 
 @media only screen and (max-width: 991px) {
-  .our_clients .slider .item {
+  .our_clients .logo-card {
     width: 300px;
     height: 130px;
   }
 }
 
 @media only screen and (max-width: 575px) {
-  .our_clients .slider .item {
-    width: 240px;
-    height: 100px;
+  .our_clients .logo-card {
+    width: 260px;
+    height: 110px;
   }
 }
+
 /************ Our-Clients section ui end here ************/
+
+/************ testimonials section ui start here ************/
+.testimonial-section {
+  padding: 5rem 0;
+}
+
+.testimonial-section .title {
+  font-weight: 700;
+  font-size: 34px;
+  color: #170f49;
+}
+
+.testimonial-section .testimonial-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 30px;
+  border: 1px solid #eff0f6;
+  box-shadow: 0px 5px 14px 0px #080f340a;
+  min-height: 335px;
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial-section .testimonial-card .main-text {
+  font-weight: 600;
+  font-size: 20px;
+  color: #170f49;
+}
+
+.testimonial-section .testimonial-card .para {
+  margin: 0;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #6f6c90;
+  margin-top: 10px;
+  margin-bottom: 1rem;
+}
+
+.testimonial-section .testimonial-card .profile_wrapper {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.testimonial-section .testimonial-card .profile_wrapper .avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.testimonial-section .testimonial-card .profile_wrapper .avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.testimonial-section .testimonial-card .profile_wrapper .name {
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0%;
+  color: #170f49;
+}
+
+.testimonial-section .testimonial-card .profile_wrapper .profession {
+  font-weight: 400;
+  font-size: 1rem;
+  color: #6f6c90;
+}
+
+.testimonial-section .testimonial-navigation {
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonial-section .testimonial-navigation .swiper-button-prev,
+.testimonial-section .testimonial-navigation .swiper-button-next {
+  position: static;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+  width: 40px;
+  height: 40px;
+  background: #046882;
+  border-radius: 50%;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.testimonial-section .swiper-button-prev::after,
+.testimonial-section .swiper-button-next::after {
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 991px) {
+  .testimonial-section .title {
+    font-size: 32px;
+  }
+
+  .testimonial-section .testimonial-card {
+    min-height: 310px;
+  }
+
+  .testimonial-section .testimonial-card .main-text {
+    font-size: 18px;
+  }
+
+  .testimonial-section .testimonial-card .para {
+    font-size: 14px;
+  }
+
+  .testimonial-section .testimonial-card .profile_wrapper .avatar {
+    width: 45px;
+    height: 45px;
+  }
+
+  .testimonial-section .testimonial-card .profile_wrapper .name {
+    font-size: 14px;
+  }
+
+  .testimonial-section .testimonial-card .profile_wrapper .profession {
+    font-size: 14px;
+  }
+
+  .testimonial-section .testimonial-navigation .swiper-button-prev,
+  .testimonial-section .testimonial-navigation .swiper-button-next {
+    width: 35px;
+    height: 35px;
+  }
+  .testimonial-section .swiper-button-prev::after,
+  .testimonial-section .swiper-button-next::after {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .testimonial-section .testimonial-card {
+    min-height: 280px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .testimonial-section {
+    padding: 5rem 5%;
+  }
+
+  .testimonial-section .title {
+    font-size: 28px;
+  }
+}
+/************ testimonials section ui end here ************/
+
+/************ newsletter-signup section ui start here ************/
+.newsletter_signup {
+  padding: 5rem 0;
+}
+
+.newsletter_signup .newsletter_card {
+  width: 100%;
+  background: linear-gradient(269.98deg, #39d3fa 0.01%, #046882 98.87%);
+  padding: 4rem;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 2rem;
+}
+
+.newsletter_signup .newsletter_card .first_title {
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.newsletter_signup .newsletter_card .second_title {
+  font-weight: 600;
+  font-size: 40px;
+  color: #fff8f8;
+}
+
+.newsletter_signup .newsletter_card .input_wrapper {
+  position: relative;
+}
+
+.newsletter_signup .newsletter_card .input_wrapper input {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  outline: none;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #ffffff;
+  padding: 10px 0;
+}
+
+.newsletter_signup .newsletter_card .input_wrapper input::placeholder {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.newsletter_signup .newsletter_card .input_wrapper .send_btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.newsletter_signup .newsletter_card .input_wrapper .send_btn img {
+  width: 24px;
+}
+
+@supports (-webkit-appearance: none) or (-moz-appearance: none) {
+  .checkbox-wrapper-13 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .checkbox-wrapper-13 input[type="checkbox"] {
+    --active: #ffffff;
+    --active-inner: #fff;
+    --border: #ffffff;
+    --background: #fff;
+    --disabled: #f6f8ff;
+    --disabled-inner: #e1e6f9;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    height: 21px;
+    outline: none;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    margin: 0;
+    cursor: pointer;
+    border: 1px solid var(--bc, var(--border));
+    background: transparent;
+    transition: background 0.3s, border-color 0.3s, box-shadow 0.2s;
+  }
+  .checkbox-wrapper-13 input[type="checkbox"]:after {
+    content: "";
+    display: block;
+    left: 0;
+    top: 0;
+    position: absolute;
+    transition: transform var(--d-t, 0.3s) var(--d-t-e, ease),
+      opacity var(--d-o, 0.2s);
+  }
+  .checkbox-wrapper-13 input[type="checkbox"]:checked {
+    --b: var(--active);
+    --bc: var(--active);
+    --d-o: 0.3s;
+    --d-t: 0.6s;
+    --d-t-e: cubic-bezier(0.2, 0.85, 0.32, 1.2);
+  }
+  .checkbox-wrapper-13 input[type="checkbox"]:disabled {
+    --b: var(--disabled);
+    cursor: not-allowed;
+    opacity: 0.9;
+  }
+  .checkbox-wrapper-13 input[type="checkbox"]:disabled:checked {
+    --b: var(--disabled-inner);
+    --bc: var(--border);
+  }
+  .checkbox-wrapper-13 input[type="checkbox"]:disabled + label {
+    cursor: not-allowed;
+  }
+  .checkbox-wrapper-13 input[type="checkbox"]:focus {
+    box-shadow: 0 0 0 var(--focus);
+  }
+  .checkbox-wrapper-13 input[type="checkbox"]:not(.switch) {
+    width: 21px;
+  }
+  .checkbox-wrapper-13 input[type="checkbox"]:not(.switch):after {
+    opacity: var(--o, 0);
+  }
+  .checkbox-wrapper-13 input[type="checkbox"]:not(.switch):checked {
+    --o: 1;
+  }
+  .checkbox-wrapper-13 input[type="checkbox"] + label {
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 12px;
+    color: #ffffff;
+  }
+
+  .checkbox-wrapper-13 input[type="checkbox"]:not(.switch) {
+    border-radius: 5px;
+  }
+  .checkbox-wrapper-13 input[type="checkbox"]:not(.switch):after {
+    width: 5px;
+    height: 9px;
+    border: 2px solid var(--active-inner);
+    border-top: 0;
+    border-left: 0;
+    left: 7px;
+    top: 4px;
+    transform: rotate(var(--r, 20deg));
+  }
+  .checkbox-wrapper-13 input[type="checkbox"]:not(.switch):checked {
+    --r: 43deg;
+  }
+}
+
+.checkbox-wrapper-13 * {
+  box-sizing: inherit;
+}
+.checkbox-wrapper-13 *:before,
+.checkbox-wrapper-13 *:after {
+  box-sizing: inherit;
+}
+
+@media only screen and (max-width: 991px) {
+  .newsletter_signup .newsletter_card {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .newsletter_signup {
+    padding: 5rem 5%;
+  }
+  .newsletter_signup .newsletter_card {
+    grid-template-columns: 1fr;
+    padding: 3rem 1.5rem;
+  }
+  .newsletter_signup .newsletter_card .first_title {
+    font-size: 14px;
+  }
+  .newsletter_signup .newsletter_card .second_title {
+    font-size: 34px;
+  }
+  .newsletter_signup .newsletter_card .input_wrapper .send_btn img {
+    width: 20px;
+  }
+
+  @supports (-webkit-appearance: none) or (-moz-appearance: none) {
+    .checkbox-wrapper-13 input[type="checkbox"] {
+      height: 20px;
+    }
+    .checkbox-wrapper-13 input[type="checkbox"]:not(.switch) {
+      width: 20px;
+    }
+    .checkbox-wrapper-13 input[type="checkbox"]:not(.switch):after {
+      left: 7px;
+      top: 4px;
+    }
+  }
+}
+
+/************ newsletter-signup section ui end here ************/
