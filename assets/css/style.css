@@ -683,7 +683,7 @@ p {
 
 /************ Our-Clients section ui start here ************/
 .our_clients {
-  padding: 5rem 0;
+  padding: 3rem 0;
   background-color: #f6f6f6;
   overflow: hidden;
 }
@@ -731,8 +731,8 @@ p {
 }
 
 .our_clients .logo-card {
-  width: 320px;
-  height: 150px;
+  width: 200px;
+  height: 100px;
   border-radius: 20px;
   background-color: #ffffff;
   display: flex;
@@ -742,11 +742,11 @@ p {
 }
 
 .our_clients .logo-card.special {
-  padding: 1rem;
+  padding: .2rem;
 }
 
 .our_clients .logo-card .client-logo {
-  height: 100%;
+  height: 50%;
   width: 100%;
   object-fit: contain;
 }
@@ -1205,18 +1205,36 @@ p {
   align-items: center;
   gap: 10px;
 }
-
+.powered-by{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+}
+.powered-by img{
+  margin-bottom: 3px;
+  width: 100px;
+  height: 20px;
+}
+.powered-by span{
+  font-weight: 300;
+  font-size: 14px;
+  color: white;
+}
 .footer .copyright_wrapper {
   margin-top: 3rem;
   width: 100%;
   background-color: #191919;
   padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .footer .copyright_wrapper p {
   font-weight: 300;
   font-size: 14px;
-  color: #b0afaf;
+  color: #ffff;
   text-align: center;
 }
 

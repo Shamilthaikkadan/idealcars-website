@@ -1,643 +1,521 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IDEAL CARS</title>
 
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IDEAL CARS</title>
 
-    <!-- inter, raleway font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
 
-    <!-- Swiper CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- inter, raleway font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
-      rel="stylesheet"
-    />
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="/assets/css/style.css" />
-  </head>
-  <body>
-    <!-- Preloader -->
-    <section id="preloader" class="preloader">
-      <div class="spinner">
-        <span class="spinner-rotate"></span>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+
+<body>
+  <!-- Preloader -->
+  <section id="preloader" class="preloader">
+    <div class="spinner">
+      <span class="spinner-rotate"></span>
+    </div>
+  </section>
+
+  <header class="header">
+    <div class="container">
+      <a href="index.html">
+        <img src="/assets/images/logo.png" alt="Logo" class="logo" />
+      </a>
+      <ul class="nav_items" id="navItems">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="about.html">About Us</a>
+        </li>
+        <li>
+          <a href="fleets.html">Fleets</a>
+        </li>
+        <li>
+          <a href="services.html">Services</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+      </ul>
+      <div class="right">
+        <img src="/assets/images/svg/second-logo.svg" alt="Logo" class="second-logo" />
+        <button class="menu_btn" id="menuBtn">
+          <img src="/assets/images/svg/menu_icon.svg" alt="Menu" />
+        </button>
       </div>
-    </section>
+    </div>
+  </header>
 
-    <header class="header">
-      <div class="container">
-        <a href="index.html">
-          <img src="/assets/images/logo.png" alt="Logo" class="logo" />
-        </a>
-        <ul class="nav_items" id="navItems">
-          <li>
-            <a href="index.html">Home</a>
-          </li>
-          <li>
-            <a href="about.html">About Us</a>
-          </li>
-          <li>
-            <a href="fleets.html">Fleets</a>
-          </li>
-          <li>
-            <a href="services.html">Services</a>
-          </li>
-          <li>
-            <a href="contact.html">Contact</a>
-          </li>
-        </ul>
-        <div class="right">
-          <img
-            src="/assets/images/svg/second-logo.svg"
-            alt="Logo"
-            class="second-logo"
-          />
-          <button class="menu_btn" id="menuBtn">
-            <img src="/assets/images/svg/menu_icon.svg" alt="Menu" />
-          </button>
+  <section class="hero_section">
+    <div class="container">
+      <h1 class="title">
+        Arrive in Style. Driven <br />
+        by Excellence.
+      </h1>
+      <p class="sub-title">
+        Luxury Chauffeurs | Private <br />
+        Drivers | Premium Experience
+      </p>
+      <button class="view_more_btn mt-4">
+        View More
+        <img src="/assets/images/svg/arrow-right-top.svg" alt="Arrow" />
+      </button>
+    </div>
+  </section>
+
+  <section class="home_about_us">
+    <div class="container">
+      <div>
+        <div class="section_title_wrapper" data-aos="fade-right" data-aos-delay="100">
+          <h2 class="section_title">About Us</h2>
+          <div class="line"></div>
         </div>
-      </div>
-    </header>
-
-    <section class="hero_section">
-      <div class="container">
-        <h1 class="title">
-          Arrive in Style. Driven <br />
-          by Excellence.
+        <h1 class="title mt-4" data-aos="fade-right" data-aos-delay="200">
+          Guiding You Every Step of the Way to Find Your Perfect Property
         </h1>
-        <p class="sub-title">
-          Luxury Chauffeurs | Private <br />
-          Drivers | Premium Experience
-        </p>
-        <button class="view_more_btn mt-4">
+        <button class="view_more_btn small mt-5 first_btn" data-aos="fade-right" data-aos-delay="300">
           View More
           <img src="/assets/images/svg/arrow-right-top.svg" alt="Arrow" />
         </button>
       </div>
-    </section>
+      <div>
+        <p class="para" data-aos="fade-up" data-aos-delay="200">
+          Welcome to ACE EMPIRE, your trusted partner in finding the perfect
+          property. Whether you're buying, selling, or renting, we are
+          committed to providing a seamless and professional real estate
+          experience. With years of industry expertise and a deep
+          understanding of the local market, our team of dedicated agents
+          works tirelessly to help you navigate the complexities of real
+          estate transactions with ease.
+        </p>
+        <button class="view_more_btn small mt-4 second_btn">
+          View More
+          <img src="/assets/images/svg/arrow-right-top.svg" alt="Arrow" />
+        </button>
+      </div>
+    </div>
+  </section>
 
-    <section class="home_about_us">
-      <div class="container">
-        <div>
-          <div
-            class="section_title_wrapper"
-            data-aos="fade-right"
-            data-aos-delay="100"
-          >
-            <h2 class="section_title">About Us</h2>
-            <div class="line"></div>
+  <section class="home_services">
+    <div class="container">
+      <div class="section_title_wrapper">
+        <h2 class="section_title white">Services</h2>
+        <div class="line white"></div>
+      </div>
+      <div class="title_wrapper">
+        <h1 class="title mt-4">Our Bouquet of Services</h1>
+        <div class="view_all_service_wrapper" onclick="window.location.href='services.html'">
+          <div class="round">
+            <img src="/assets/images/svg/arrow-right.svg" alt="Arrow" />
           </div>
-          <h1 class="title mt-4" data-aos="fade-right" data-aos-delay="200">
-            Guiding You Every Step of the Way to Find Your Perfect Property
-          </h1>
-          <button
-            class="view_more_btn small mt-5 first_btn"
-            data-aos="fade-right"
-            data-aos-delay="300"
-          >
-            View More
-            <img src="/assets/images/svg/arrow-right-top.svg" alt="Arrow" />
-          </button>
-        </div>
-        <div>
-          <p class="para" data-aos="fade-up" data-aos-delay="200">
-            Welcome to ACE EMPIRE, your trusted partner in finding the perfect
-            property. Whether you're buying, selling, or renting, we are
-            committed to providing a seamless and professional real estate
-            experience. With years of industry expertise and a deep
-            understanding of the local market, our team of dedicated agents
-            works tirelessly to help you navigate the complexities of real
-            estate transactions with ease.
-          </p>
-          <button class="view_more_btn small mt-4 second_btn">
-            View More
-            <img src="/assets/images/svg/arrow-right-top.svg" alt="Arrow" />
-          </button>
+          <p>VIEW ALL SERVICES</p>
         </div>
       </div>
-    </section>
 
-    <section class="home_services">
-      <div class="container">
-        <div class="section_title_wrapper">
-          <h2 class="section_title white">Services</h2>
-          <div class="line white"></div>
-        </div>
-        <div class="title_wrapper">
-          <h1 class="title mt-4">Our Bouquet of Services</h1>
-          <div
-            class="view_all_service_wrapper"
-            onclick="window.location.href='services.html'"
-          >
-            <div class="round">
-              <img src="/assets/images/svg/arrow-right.svg" alt="Arrow" />
-            </div>
-            <p>VIEW ALL SERVICES</p>
+      <div class="service_card_wrapper">
+        <!-- service 1 -->
+        <div class="service_card" data-aos="fade-up" data-aos-delay="200" onclick="goToService('airport-transport')">
+          <img src="/assets/images/services/service-1.png" alt="Service" />
+          <div class="text_wrapper">
+            <p class="text">Airport transport services</p>
           </div>
         </div>
-
-        <div class="service_card_wrapper">
-          <!-- service 1 -->
-          <div
-            class="service_card"
-            data-aos="fade-up"
-            data-aos-delay="200"
-            onclick="goToService('airport-transport')"
-          >
-            <img src="/assets/images/services/service-1.png" alt="Service" />
-            <div class="text_wrapper">
-              <p class="text">Airport transport services</p>
-            </div>
-          </div>
-          <!-- service 2 -->
-          <div
-            class="service_card"
-            data-aos="fade-up"
-            data-aos-delay="300"
-            onclick="goToService('umra-taxi')"
-          >
-            <img src="/assets/images/services/service-2.png" alt="Service" />
-            <div class="text_wrapper">
-              <p class="text">Umra taxi services</p>
-            </div>
-          </div>
-          <!-- service 3 -->
-          <div
-            class="service_card"
-            data-aos="fade-up"
-            data-aos-delay="400"
-            onclick="goToService('hotel-transport')"
-          >
-            <img src="/assets/images/services/service-3.png" alt="Service" />
-            <div class="text_wrapper">
-              <p class="text">hotel transport services</p>
-            </div>
-          </div>
-          <!-- service 4 -->
-          <div
-            class="service_card"
-            data-aos="fade-up"
-            data-aos-delay="200"
-            onclick="goToService('sports-team-transportation')"
-          >
-            <img src="/assets/images/services/service-4.png" alt="Service" />
-            <div class="text_wrapper">
-              <p class="text">sports team transportation</p>
-            </div>
-          </div>
-          <!-- service 5 -->
-          <div
-            class="service_card"
-            data-aos="fade-up"
-            data-aos-delay="300"
-            onclick="goToService('wedding-transportation')"
-          >
-            <img src="/assets/images/services/service-5.png" alt="Service" />
-            <div class="text_wrapper">
-              <p class="text">wedding transportation</p>
-            </div>
-          </div>
-          <!-- service 6 -->
-          <div
-            class="service_card"
-            data-aos="fade-up"
-            data-aos-delay="400"
-            onclick="goToService('schoolbuses')"
-          >
-            <img src="/assets/images/services/service-6.png" alt="Service" />
-            <div class="text_wrapper">
-              <p class="text">schoolbuses services</p>
-            </div>
+        <!-- service 2 -->
+        <div class="service_card" data-aos="fade-up" data-aos-delay="300" onclick="goToService('umra-taxi')">
+          <img src="/assets/images/services/service-2.png" alt="Service" />
+          <div class="text_wrapper">
+            <p class="text">Umra taxi services</p>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section class="home_fleets">
-      <div class="container">
-        <div class="section_title_wrapper">
-          <h2 class="section_title">Fleets</h2>
-          <div class="line"></div>
-        </div>
-        <h1 class="title mt-4">
-          Guiding You Every Step of the Way to Find Your
-        </h1>
-
-        <div class="tabs_wrapper mt-5">
-          <div class="tab" data-aos="fade-up" data-aos-delay="100">Economy</div>
-          <div class="tab" data-aos="fade-up" data-aos-delay="200">
-            Standerd
-          </div>
-          <div class="tab" data-aos="fade-up" data-aos-delay="300">Premium</div>
-        </div>
-        <div class="fleet_card_wrapper">
-          <!-- card 1 -->
-          <div class="fleet_card" data-aos="fade-up" data-aos-delay="100">
-            <img
-              src="/assets/images/fleets/fleet-1.png"
-              alt="Fleet"
-              class="pic"
-            />
-            <div class="details_wrapper">
-              <h3 class="name">Lexus ES 350 or Ford Taurus</h3>
-              <div class="about_wrapper">
-                <p>
-                  <img src="/assets/images/svg/passenger.svg" alt="Passenger" />
-                  Passenger 3
-                </p>
-                <p>
-                  <img src="/assets/images/svg/luggage.svg" alt="Luggage" />
-                  Luggage × 2
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- card 2 -->
-          <div class="fleet_card" data-aos="fade-up" data-aos-delay="200">
-            <img
-              src="/assets/images/fleets/fleet-2.png"
-              alt="Fleet"
-              class="pic"
-            />
-            <div class="details_wrapper">
-              <h3 class="name">Lexus ES 350 or Ford Taurus</h3>
-              <div class="about_wrapper">
-                <p>
-                  <img src="/assets/images/svg/passenger.svg" alt="Passenger" />
-                  Passenger 3
-                </p>
-                <p>
-                  <img src="/assets/images/svg/luggage.svg" alt="Luggage" />
-                  Luggage × 2
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- card 3 -->
-          <div class="fleet_card" data-aos="fade-up" data-aos-delay="300">
-            <img
-              src="/assets/images/fleets/fleet-3.png"
-              alt="Fleet"
-              class="pic"
-            />
-            <div class="details_wrapper">
-              <h3 class="name">Lexus ES 350 or Ford Taurus</h3>
-              <div class="about_wrapper">
-                <p>
-                  <img src="/assets/images/svg/passenger.svg" alt="Passenger" />
-                  Passenger 3
-                </p>
-                <p>
-                  <img src="/assets/images/svg/luggage.svg" alt="Luggage" />
-                  Luggage × 2
-                </p>
-              </div>
-            </div>
+        <!-- service 3 -->
+        <div class="service_card" data-aos="fade-up" data-aos-delay="400" onclick="goToService('hotel-transport')">
+          <img src="/assets/images/services/service-3.png" alt="Service" />
+          <div class="text_wrapper">
+            <p class="text">hotel transport services</p>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section class="our_clients">
-      <div class="container">
-        <div class="section_title_wrapper">
-          <h2 class="section_title">Our Clients</h2>
-          <div class="line"></div>
-        </div>
-
-        <div class="logo-slider">
-          <div class="logo-track">
-            <!-- First set of logos -->
-            <div class="logo-card">
-              <img
-                src="/assets/images/clients/client-1.png"
-                alt="1"
-                class="client-logo"
-              />
-            </div>
-            <div class="logo-card">
-              <img
-                src="/assets/images/clients/client-2.png"
-                alt="2"
-                class="client-logo"
-              />
-            </div>
-            <div class="logo-card">
-              <img
-                src="/assets/images/clients/client-3.png"
-                alt="3"
-                class="client-logo"
-              />
-            </div>
-            <div class="logo-card special">
-              <img
-                src="/assets/images/clients/client-4.png"
-                alt="4"
-                class="client-logo"
-              />
-            </div>
-            <!-- Duplicate set for seamless loop -->
-            <div class="logo-card">
-              <img
-                src="/assets/images/clients/client-1.png"
-                alt="1"
-                class="client-logo"
-              />
-            </div>
-            <div class="logo-card">
-              <img
-                src="/assets/images/clients/client-2.png"
-                alt="2"
-                class="client-logo"
-              />
-            </div>
-            <div class="logo-card">
-              <img
-                src="/assets/images/clients/client-3.png"
-                alt="3"
-                class="client-logo"
-              />
-            </div>
-            <div class="logo-card special">
-              <img
-                src="/assets/images/clients/client-4.png"
-                alt="4"
-                class="client-logo"
-              />
-            </div>
+        <!-- service 4 -->
+        <div class="service_card" data-aos="fade-up" data-aos-delay="200"
+          onclick="goToService('sports-team-transportation')">
+          <img src="/assets/images/services/service-4.png" alt="Service" />
+          <div class="text_wrapper">
+            <p class="text">sports team transportation</p>
           </div>
         </div>
-      </div>
-    </section>
-
-    <div class="testimonial-section">
-      <div class="container">
-        <div class="section_title_wrapper">
-          <h2 class="section_title">Testimonials</h2>
-          <div class="line"></div>
-        </div>
-        <h1 class="title mt-3">Don't take our word for it</h1>
-        <div class="mt-5 swiper testimonialSwiper">
-          <div class="swiper-wrapper">
-            <!-- Card 1 -->
-            <div class="swiper-slide testimonial-card">
-              <h3 class="main-text">“The best Webflow Templates”</h3>
-              <p class="para">
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat aute irure sint
-                amet occaecat cupidatat non proident
-              </p>
-
-              <div class="profile_wrapper">
-                <div class="avatar">
-                  <img
-                    src="/assets/images/testimonials/testimonial-1.png"
-                    alt="Profile"
-                  />
-                </div>
-                <div>
-                  <p class="name">Sophia Moore</p>
-                  <p class="profession">CEO at Webflow Agency</p>
-                </div>
-              </div>
-            </div>
-            <!-- Card 2 -->
-            <div class="swiper-slide testimonial-card">
-              <h3 class="main-text">“BRIX Templates is the #1”</h3>
-              <p class="para">
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat aute irure sint
-                amet occaecat cupidatat non proident
-              </p>
-
-              <div class="profile_wrapper">
-                <div class="avatar">
-                  <img
-                    src="/assets/images/testimonials/testimonial-2.png"
-                    alt="Profile"
-                  />
-                </div>
-                <div>
-                  <p class="name">Adam Smith</p>
-                  <p class="profession">Webflow Developer</p>
-                </div>
-              </div>
-            </div>
-            <!-- Card 3 -->
-            <div class="swiper-slide testimonial-card">
-              <h3 class="main-text">“Webflow is the best nocode tool”</h3>
-              <p class="para">
-                Ut enim ad minim veniam, quis nostrudexercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat aute irure sint
-                amet occaecat cupidatat non proident”
-              </p>
-
-              <div class="profile_wrapper">
-                <div class="avatar">
-                  <img
-                    src="/assets/images/testimonials/testimonial-3.png"
-                    alt="Profile"
-                  />
-                </div>
-                <div>
-                  <p class="name">Mike Warren</p>
-                  <p class="profession">Developer at BRIX Templates</p>
-                </div>
-              </div>
-            </div>
-            <!-- Card 4 -->
-            <div class="swiper-slide testimonial-card">
-              <h3 class="main-text">“The best Webflow Templates”</h3>
-              <p class="para">
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat aute irure sint
-                amet occaecat cupidatat non proident
-              </p>
-
-              <div class="profile_wrapper">
-                <div class="avatar">
-                  <img
-                    src="/assets/images/testimonials/testimonial-1.png"
-                    alt="Profile"
-                  />
-                </div>
-                <div>
-                  <p class="name">Sophia Moore</p>
-                  <p class="profession">CEO at Webflow Agency</p>
-                </div>
-              </div>
-            </div>
+        <!-- service 5 -->
+        <div class="service_card" data-aos="fade-up" data-aos-delay="300"
+          onclick="goToService('wedding-transportation')">
+          <img src="/assets/images/services/service-5.png" alt="Service" />
+          <div class="text_wrapper">
+            <p class="text">wedding transportation</p>
           </div>
         </div>
-
-        <!-- Navigation Buttons Below -->
-        <div class="testimonial-navigation">
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+        <!-- service 6 -->
+        <div class="service_card" data-aos="fade-up" data-aos-delay="400" onclick="goToService('schoolbuses')">
+          <img src="/assets/images/services/service-6.png" alt="Service" />
+          <div class="text_wrapper">
+            <p class="text">schoolbuses services</p>
+          </div>
         </div>
       </div>
     </div>
+  </section>
 
-    <section class="newsletter_signup">
-      <div class="container">
-        <div class="newsletter_card">
-          <div>
-            <h5 class="first_title">newsletter signup</h5>
-            <h3 class="mt-3 second_title">
-              Subscribe for <br />
-              the updates
-            </h3>
-          </div>
-          <div>
-            <div class="input_wrapper">
-              <input type="text" placeholder="Enter your email address" />
-              <button class="send_btn">
-                <img src="/assets/images/svg/send.svg" alt="Send" />
-              </button>
+  <section class="home_fleets">
+    <div class="container">
+      <div class="section_title_wrapper">
+        <h2 class="section_title">Fleets</h2>
+        <div class="line"></div>
+      </div>
+      <h1 class="title mt-4">
+        Guiding You Every Step of the Way to Find Your
+      </h1>
+
+      <div class="tabs_wrapper mt-5">
+        <div class="tab" data-aos="fade-up" data-aos-delay="100">Economy</div>
+        <div class="tab" data-aos="fade-up" data-aos-delay="200">
+          Standerd
+        </div>
+        <div class="tab" data-aos="fade-up" data-aos-delay="300">Premium</div>
+      </div>
+      <div class="fleet_card_wrapper">
+        <!-- card 1 -->
+        <div class="fleet_card" data-aos="fade-up" data-aos-delay="100">
+          <img src="/assets/images/fleets/fleet-1.png" alt="Fleet" class="pic" />
+          <div class="details_wrapper">
+            <h3 class="name">Lexus ES 350 or Ford Taurus</h3>
+            <div class="about_wrapper">
+              <p>
+                <img src="/assets/images/svg/passenger.svg" alt="Passenger" />
+                Passenger 3
+              </p>
+              <p>
+                <img src="/assets/images/svg/luggage.svg" alt="Luggage" />
+                Luggage × 2
+              </p>
             </div>
-            <div class="mt-3 checkbox-wrapper-13">
-              <input id="c1-13" type="checkbox" />
-              <label for="c1-13"
-                >I agree to the
-                <a href="#" style="color: inherit">privacy policy</a></label
-              >
+          </div>
+        </div>
+        <!-- card 2 -->
+        <div class="fleet_card" data-aos="fade-up" data-aos-delay="200">
+          <img src="/assets/images/fleets/fleet-2.png" alt="Fleet" class="pic" />
+          <div class="details_wrapper">
+            <h3 class="name">Lexus ES 350 or Ford Taurus</h3>
+            <div class="about_wrapper">
+              <p>
+                <img src="/assets/images/svg/passenger.svg" alt="Passenger" />
+                Passenger 3
+              </p>
+              <p>
+                <img src="/assets/images/svg/luggage.svg" alt="Luggage" />
+                Luggage × 2
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- card 3 -->
+        <div class="fleet_card" data-aos="fade-up" data-aos-delay="300">
+          <img src="/assets/images/fleets/fleet-3.png" alt="Fleet" class="pic" />
+          <div class="details_wrapper">
+            <h3 class="name">Lexus ES 350 or Ford Taurus</h3>
+            <div class="about_wrapper">
+              <p>
+                <img src="/assets/images/svg/passenger.svg" alt="Passenger" />
+                Passenger 3
+              </p>
+              <p>
+                <img src="/assets/images/svg/luggage.svg" alt="Luggage" />
+                Luggage × 2
+              </p>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <footer class="footer">
-      <div class="container">
-        <div class="footer_items_wrapper">
-          <div>
-            <div class="logo_wrapper">
-              <img src="/assets/images/logo.png" alt="Logo" class="logo" />
-              <img
-                src="/assets/images/svg/second-logo.svg"
-                alt="Second Logo"
-                class="second_logo"
-              />
-            </div>
+  <section class="our_clients">
+    <div class="container">
+      <div class="section_title_wrapper">
+        <h2 class="section_title">Our Clients</h2>
+        <div class="line"></div>
+      </div>
+
+      <div class="logo-slider">
+        <div class="logo-track">
+          <!-- First set of logos -->
+          <div class="logo-card">
+            <img src="/assets/images/clients/client-1.png" alt="1" class="client-logo" />
+          </div>
+          <div class="logo-card">
+            <img src="/assets/images/clients/client-2.png" alt="2" class="client-logo" />
+          </div>
+          <div class="logo-card">
+            <img src="/assets/images/clients/client-3.png" alt="3" class="client-logo" />
+          </div>
+          <div class="logo-card special">
+            <img src="/assets/images/clients/client-4.png" alt="4" class="client-logo" />
+          </div>
+          <!-- Duplicate set for seamless loop -->
+          <div class="logo-card">
+            <img src="/assets/images/clients/client-1.png" alt="1" class="client-logo" />
+          </div>
+          <div class="logo-card">
+            <img src="/assets/images/clients/client-2.png" alt="2" class="client-logo" />
+          </div>
+          <div class="logo-card">
+            <img src="/assets/images/clients/client-3.png" alt="3" class="client-logo" />
+          </div>
+          <div class="logo-card special">
+            <img src="/assets/images/clients/client-4.png" alt="4" class="client-logo" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="testimonial-section">
+    <div class="container">
+      <div class="section_title_wrapper">
+        <h2 class="section_title">Testimonials</h2>
+        <div class="line"></div>
+      </div>
+      <h1 class="title mt-3">Don't take our word for it</h1>
+      <div class="mt-5 swiper testimonialSwiper">
+        <div class="swiper-wrapper">
+          <!-- Card 1 -->
+          <div class="swiper-slide testimonial-card">
+            <h3 class="main-text">“The best Webflow Templates”</h3>
             <p class="para">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's Lorem Ipsum is
-              simply dum
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat aute irure sint
+              amet occaecat cupidatat non proident
             </p>
-          </div>
-          <div>
-            <h4 class="items_title">Quick Links</h4>
-            <ul class="list">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About us</a></li>
-              <li><a href="services.html">Services</a></li>
-              <li><a href="contact.html">Contact us</a></li>
-            </ul>
-          </div>
-          <div>
-            <h4 class="items_title">Social media</h4>
-            <ul class="list">
-              <li>
-                <a href="#">
-                  <img
-                    src="assets/images/svg/instagram.svg"
-                    alt="Instagram"
-                  />Instagram
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img
-                    src="assets/images/svg/facebook.svg"
-                    alt="Facebook"
-                  />Facebook
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="assets/images/svg/youtube.svg" alt="You Tube" />You
-                  Tube
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img
-                    src="assets/images/svg/linkedin.svg"
-                    alt="Linkdin"
-                  />Linkdin
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h4 class="items_title">Contact us</h4>
-            <ul class="list">
-              <li>
-                <a href="#">
-                  <img
-                    src="assets/images/svg/phone.svg"
-                    alt="Phone"
-                  />+97145587854
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img
-                    src="assets/images/svg/whatsapp.svg"
-                    alt="Whatsapp"
-                  />+97145587854
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src="assets/images/svg/email.svg" alt="Email" />You
-                  aceempire@gmail.com
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
 
-        <div class="copyright_wrapper">
-          <p>2025 All right reserved</p>
+            <div class="profile_wrapper">
+              <div class="avatar">
+                <img src="/assets/images/testimonials/testimonial-1.png" alt="Profile" />
+              </div>
+              <div>
+                <p class="name">Sophia Moore</p>
+                <p class="profession">CEO at Webflow Agency</p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="swiper-slide testimonial-card">
+            <h3 class="main-text">“BRIX Templates is the #1”</h3>
+            <p class="para">
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat aute irure sint
+              amet occaecat cupidatat non proident
+            </p>
+
+            <div class="profile_wrapper">
+              <div class="avatar">
+                <img src="/assets/images/testimonials/testimonial-2.png" alt="Profile" />
+              </div>
+              <div>
+                <p class="name">Adam Smith</p>
+                <p class="profession">Webflow Developer</p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="swiper-slide testimonial-card">
+            <h3 class="main-text">“Webflow is the best nocode tool”</h3>
+            <p class="para">
+              Ut enim ad minim veniam, quis nostrudexercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat aute irure sint
+              amet occaecat cupidatat non proident”
+            </p>
+
+            <div class="profile_wrapper">
+              <div class="avatar">
+                <img src="/assets/images/testimonials/testimonial-3.png" alt="Profile" />
+              </div>
+              <div>
+                <p class="name">Mike Warren</p>
+                <p class="profession">Developer at BRIX Templates</p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="swiper-slide testimonial-card">
+            <h3 class="main-text">“The best Webflow Templates”</h3>
+            <p class="para">
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat aute irure sint
+              amet occaecat cupidatat non proident
+            </p>
+
+            <div class="profile_wrapper">
+              <div class="avatar">
+                <img src="/assets/images/testimonials/testimonial-1.png" alt="Profile" />
+              </div>
+              <div>
+                <p class="name">Sophia Moore</p>
+                <p class="profession">CEO at Webflow Agency</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </footer>
 
-    <!-- Bootstrap JS (with Popper) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="/assets/js/script.js"></script>
-    <script src="/assets/js/swiper.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
+      <!-- Navigation Buttons Below -->
+      <div class="testimonial-navigation">
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+  </div>
 
-    <script>
-      function goToService(service) {
-        window.location.href = `service-view.html?service=${encodeURIComponent(
-          service
-        )}`;
-      }
-    </script>
-  </body>
+  <section class="newsletter_signup">
+    <div class="container">
+      <div class="newsletter_card">
+        <div>
+          <h5 class="first_title">newsletter signup</h5>
+          <h3 class="mt-3 second_title">
+            Subscribe for <br />
+            the updates
+          </h3>
+        </div>
+        <div>
+          <div class="input_wrapper">
+            <input type="text" placeholder="Enter your email address" />
+            <button class="send_btn">
+              <img src="/assets/images/svg/send.svg" alt="Send" />
+            </button>
+          </div>
+          <div class="mt-3 checkbox-wrapper-13">
+            <input id="c1-13" type="checkbox" />
+            <label for="c1-13">I agree to the
+              <a href="#" style="color: inherit">privacy policy</a></label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer_items_wrapper">
+        <div>
+          <div class="logo_wrapper">
+            <img src="/assets/images/logo.png" alt="Logo" class="logo" />
+            <img src="/assets/images/svg/second-logo.svg" alt="Second Logo" class="second_logo" />
+          </div>
+          <p class="para">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's Lorem Ipsum is
+            simply dum
+          </p>
+        </div>
+        <div>
+          <h4 class="items_title">Quick Links</h4>
+          <ul class="list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="items_title">Social media</h4>
+          <ul class="list">
+            <li>
+              <a href="https://www.instagram.com/idltransport/">
+                <img src="assets/images/svg/instagram.svg" alt="Instagram" />Instagram
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="assets/images/svg/facebook.svg" alt="Facebook" />Facebook
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="assets/images/svg/youtube.svg" alt="You Tube" />You
+                Tube
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="assets/images/svg/linkedin.svg" alt="Linkdin" />Linkdin
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="items_title">Contact us</h4>
+          <ul class="list">
+            <li>
+              <a href="#">
+                <img src="assets/images/svg/phone.svg" alt="Phone" />+97145587854
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="assets/images/svg/whatsapp.svg" alt="Whatsapp" />+97145587854
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="assets/images/svg/email.svg" alt="Email" />info@idealcars.in
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="copyright_wrapper">
+        <div class="powered-by">
+          <span>Powered</span>
+          <span>by</span>
+          <a href="https://pentaverse.in"><img src="/assets/images/svg/penta-font.svg" alt=""></a>
+        </div>
+        <p>2025 All right reserved</p>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS (with Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/assets/js/script.js"></script>
+  <script src="/assets/js/swiper.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <script>
+    function goToService(service) {
+      window.location.href = `service-view.html?service=${encodeURIComponent(
+        service
+      )}`;
+    }
+  </script>
+</body>
+
 </html>
